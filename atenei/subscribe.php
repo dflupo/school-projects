@@ -20,12 +20,17 @@
     $straniero = $_POST['straniero'];
     $lavoratore = $_POST['lavoratore'];
 
+    function required() {
+        $is_empty = $name != '' && $last_name != '' ? true : false;
+        return $is_empty; 
+    }
+
     var_dump($_POST);
 ?>
 
 <?php 
     $query_insert = "INSERT INTO Studenti (name, last_name, sex, ateneo, cap, straniero, lavoratore, descrizione) VALUES ('$name', '$last_name', '$sex', '$ateneo', '$cap', '$straniero', '$lavoratore', '')";
-    if ($conn->query($query_insert) === TRUE) {
+    if ($conn->query($query_insert) === TRUE && required()) {
         echo "New record created successfully";
       } else {
         echo "Error: " . $query_insert . "<br>" . $conn->error;
