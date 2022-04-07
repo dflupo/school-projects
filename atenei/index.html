@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="container">
+    <h1 class="text-center mb-5 mt-4">Iscrizione Ateneo</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form action="subscribe.php" method="post">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="last-name">Cognome</label>
+                        <input type="text" class="form-control" id="last-name" name="last-name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                      </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="col-md-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sex" id="radio-male" value="male" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Uomo
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sex" id="radio-female" value="female">
+                                <label class="form-check-label" for="female">
+                                    Donna
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sex" id="radio-other" value="other">
+                                <label class="form-check-label" for="other">
+                                    Preferisco non specificarlo
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-5">
+                            <label for="inputAteneo">Ateneo</label>
+                            <select id="inputAteneo" name="ateneo" class="form-control">
+                                <option value="Tor Vergata">Tor Vergata</option>
+                                <option value="La Sapienza">La Sapzienza</option>
+                                <option value="Roma Tre">Roma Tre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">CAP</label>
+                            <input type="text" class="form-control" id="inputZip" name="cap">
+                        </div>
+
+                    </div>
+                   
+                    <div class="form-row mt-3 mb-5">
+                      <div class="form-group col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="straniero" name="straniero">
+                            <label class="form-check-label" for="straniero">
+                              Sono uno studente straniero
+                            </label>
+                          </div>
+                        </div>
+                
+                        <div class="form-group col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" name="lavoratore" type="checkbox" id="lavoratore">
+                            <label class="form-check-label" for="lavoratore">
+                              Sono uno studente lavoratore
+                            </label>
+                          </div>
+                        </div>
+                    </div>
+                    
+            
+                    <button type="submit" class="btn btn-primary">Iscriviti</button>
+            
+                  </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
